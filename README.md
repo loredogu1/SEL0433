@@ -5,7 +5,15 @@
 **Número USP:** [Inserir seu Número USP]  
 
 ## 📌 Objetivos do Projeto
-Este repositório contém as implementações desenvolvidas para o Projeto 3 da disciplina de Aplicação de Microprocessadores. O foco principal é a utilização do microcontrolador de 32 bits ESP32 para o controle de periféricos através de Modulação por Largura de Pulso (PWM), explorando tanto a biblioteca de controle de LEDs (`LEDC`) quanto o controle direto de hardware para acionamento de motores, aliados à conversão analógico-digital (ADC).
+Este projeto explora conceitos de comunicação serial e modulação por largura de pulso (PWM) aplicados a um microcontrolador de 32 bits. Desenvolvido em linguagem C para a placa ESP32 DevKit, o sistema teve sua montagem, validação e execução integralmente realizadas no ambiente de simulação Wokwi.
+
+O controle embarcado divide-se em duas frentes principais:
+
+Controle Luminoso: Ajuste contínuo e independente da intensidade de um LED RGB (catodo comum) via canais PWM, com monitoramento de dados em tempo real pela interface serial (UART).
+
+Acionamento de Atuadores: Controle posicional de um servomotor a partir da leitura analógica de um potenciômetro (ADC). A aplicação evolui para o controle avançado de motores utilizando bibliotecas nativas, exibição de parâmetros via display OLED (barramento I2C) e integração com outros recursos de hardware e software.
+
+A documentação técnica detalhada — incluindo decisões de projeto, inicialização de periféricos, estruturação de tarefas e cálculos de duty cycle — encontra-se nos comentários dos arquivos de código-fonte deste repositório.
 
 ---
 
